@@ -32,7 +32,7 @@ def copy_data():
 with DAG(
     dag_id='Copy Redshift to Aurora_db',
     default_args=default_args,
-    description='Copy Mysql Data',
+    description='Copy Redshift to Aurora_db',
     schedule_interval="* * * * 5"
 ) as dag:
     delete_aurora_all_users = MySqlOperator(
