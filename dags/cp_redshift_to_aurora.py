@@ -30,7 +30,7 @@ def copy_data():
     mysql.insert_rows(table="redshift_users", rows=users)
 
 with DAG(
-    dag_id='Copy Redshift to Aurora_db',
+    dag_id='CopyRedshiftToAurora_db',
     default_args=default_args,
     description='Copy Redshift to Aurora_db',
     schedule_interval="* * * * 5"
